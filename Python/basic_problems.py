@@ -32,3 +32,16 @@ for char in text:
         count += 1
 
 print("Number of vowels:", count)
+
+# Basic password strength checker
+
+password = input("Enter password: ")
+
+if len(password) < 6:
+    print("Weak password")
+elif password.isalpha():
+    print("Add numbers or symbols for stronger password")
+elif password.isalnum():
+    print("Medium strength password")
+else:
+    print("Strong password")
