@@ -20,3 +20,15 @@ else:
 
 for i in range(1, 11):
     print(i)
+
+# Count vowels in a string
+
+text = input("Enter a sentence: ").lower()
+vowels = "aeiou"
+count = 0
+
+for char in text:
+    if char in vowels:
+        count += 1
+
+print("Number of vowels:", count)
